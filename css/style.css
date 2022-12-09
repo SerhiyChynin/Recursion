@@ -41,3 +41,12 @@ hr {
     height: 50px;
     position: relative;
 }
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.out {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}

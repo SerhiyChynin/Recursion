@@ -23,3 +23,32 @@ function move() {
 }
 
 document.querySelector('button').onclick = move;
+
+
+// home work
+
+let b = 100;
+function left() {
+    b = b - 1;
+    console.log(b);
+    if (b > 1) {
+        return "hello";
+    }
+    
+    left();
+}
+left();
+
+function moveLeft() {
+    offset = offset + 10;
+    document.querySelector('.out').style.top = offset + 'px';
+    document.querySelector('.out').style.right = offset + 'px';
+    document.querySelector('.out').style.width = offset + 'px';
+    document.querySelector('.out').style.borderRadius = offset + '%';
+    if (offset > 200) {
+        return true;
+    }
+    setTimeout(moveLeft, 400);
+}
+document.querySelector('.btn').onclick = moveLeft;
+
